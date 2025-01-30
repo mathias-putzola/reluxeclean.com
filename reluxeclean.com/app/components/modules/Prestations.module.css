@@ -1,0 +1,83 @@
+/* Classe pour la section des prestations */
+.section {
+    background-color: #22353c;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Classe pour le titre des prestations */
+.title {
+    color: #ffffff; /* Couleur pour les titres */
+    margin-bottom: 2rem;
+    font-weight: bold; /* Titre en gras */
+    font-size: 2.5rem; /* Taille du titre principale */
+}
+
+/* Conteneur pour chaque section de prestations */
+.prestationsection {
+    margin-bottom: 2rem; /* Espacement entre les sections */
+    margin-left: 1rem
+}
+
+/* Titre des sections de prestations */
+.prestationtitle {
+    font-weight: bold; /* Titre des prestations en gras */
+    color: #ffffff; /* Couleur du titre */
+    margin: 1rem 0; /* Marges pour espacer les titres */
+    font-size: 2rem; /* Taille des titres de section */
+    text-align: left; /* Aligner le texte à gauche */
+    margin-left: 8rem;
+}
+
+/* Style pour chaque service */
+.columns {
+    display: flex; /* Utilise flexbox pour aligner horizontalement */
+    justify-content: center; /* Centre les services horizontalement */
+    flex-wrap: wrap; /* Permet aux services de passer à la ligne si nécessaire */
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments à l'intérieur */
+    width: 180px; /* Largeur fixe pour chaque service */
+    margin: 1rem 1rem; /* Marge autour de chaque service */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff; /* Couleur de fond des services */
+    padding: 1rem;
+    text-align: center; /* Centre le texte */
+}
+
+/* Titre de chaque service */
+.servicetitle {
+    font-weight: bold; /* Titre du service en gras */
+    color: #ffffff; /* Couleur du titre */
+    margin: 0.5rem 0; /* Marges pour espacer les titres */
+}
+
+/* Style pour l'image du service */
+.service img {
+    width: 100%; /* Prend la largeur totale de la div */
+    height: auto; /* Hauteur automatique */
+}
+
+/* Style pour le prix */
+.price {
+    background-color: #df2121; /* Couleur de fond pour le prix */
+    color: rgb(255, 255, 255); /* Couleur du texte du prix */
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block; /* Pour que le prix soit dans un carré */
+    margin-top: 0.5rem; /* Marge au-dessus du prix */
+    font-weight: bold;
+}
+
+.serviceresume {
+    color: #515151; /* Couleur du résumé */
+}
+
+.col {
+    background-color: #21343a;
+}

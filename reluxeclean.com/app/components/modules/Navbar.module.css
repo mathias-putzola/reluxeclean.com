@@ -1,0 +1,105 @@
+/* components/Navbar.module.css */
+.navbar {
+    background-color: #22353c;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    z-index: 10; /* S'assure que la navbar est au-dessus de tout */
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 5rem;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), /* Lueur moyenne */
+    0 0 60px rgba(0, 255, 255, 0.1); /* Ombre lointaine */
+}
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 5rem;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), /* Lueur moyenne */
+    0 0 60px rgba(0, 255, 255, 0.1); /* Ombre lointaine */
+  }
+  
+  .menuItem {
+    margin-left: 1.5rem;
+  }
+  
+  .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    color: #ffffff; /* Couleur rouge de votre charte graphique */
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      position: absolute;
+      top: 64px; /* Ajustez en fonction de la hauteur de la navbar */
+      left: 0;
+      right: 0;
+      background-color: #262626;
+      flex-direction: column;
+      display: none;
+      align-items: center;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    .menuItem {
+      margin: 1rem 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  .contactButton {
+    background-color: #d2121d; /* Fond blanc */
+    color: #ffffff; /* Couleur du texte */
+    padding: 0.5rem 1rem; /* Espacement intérieur pour un meilleur aspect */
+    border-radius: 30px; /* Bordures arrondies */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(34, 53, 60, 0.6); /* Effet néon sur le fond */
+    font-weight: bold;
+    cursor: pointer;
+
+}
+/* 
+.contactButton:hover {
+    box-shadow: 0 0 20px rgba(34, 53, 60, 0.8); /* Augmentation de l'effet néon au hover 
+    color: #ffffff; /* Changement de la couleur du texte lors du survol 
+    background-color: #22353c; /* Inversion du fond 
+} */

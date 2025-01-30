@@ -1,0 +1,40 @@
+/* HeroSection.module.css */
+.heroSection {
+    position: relative;
+    height: 70vh; /* Ajuste la hauteur pour correspondre à la taille désirée */
+    width: 100vw; /* Prend toute la largeur de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heroImage {
+    width: 100%; /* L'image occupe toute la largeur */
+    height: auto; /* Conserve les proportions de l'image */
+    object-fit: cover; /* Optionnel : pour couvrir toute la section sans distorsion */
+    position: absolute; /* Place l'image derrière le contenu */
+    top: 0;
+    left: 0;
+    z-index: -1; /* S'assure que l'image est en arrière-plan */
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1; /* Le contenu reste au-dessus de l'image */
+    text-align: center;
+    color: white;
+}
+
+.heroTitle {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    color:"#22353c"
+}
+
+.heroSubtitle {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 10px;
+}
